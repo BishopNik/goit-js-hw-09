@@ -16,3 +16,28 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.buttons {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+button {
+  margin-top: 200px;
+  width: 250px;
+  height: 80px;
+  border-radius: 8px;
+  font-size: 30px;
+  font-weight: 600;
+  scale: 1;
+  cursor: not-allowed;
+  background-color: gainsboro;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.hover:hover {
+  cursor: pointer;
+  scale: 1.07;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
