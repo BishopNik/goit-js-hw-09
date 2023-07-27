@@ -23,7 +23,8 @@ img {
   justify-content: center;
 }
 
-button {
+.start-btn,
+.stop-btn {
   margin-top: 200px;
   width: 250px;
   height: 80px;
@@ -36,8 +37,47 @@ button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
 }
 
-.hover:hover {
+.start-btn.hover:hover,
+.stop-btn.hover:hover,
+.timer-btn:hover {
   cursor: pointer;
   scale: 1.07;
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timer {
+  display: flex;
+  gap: 30px;
+  padding: 50px 100px;
+  font-size: 25px;
+}
+
+#datetime-picker {   
+  height: 50px;
+  padding: 5px 0 5px 25px;
+  border-radius: 6px;
+  margin-left: 100px;
+  margin-right: 35px;
+  font-size: 25px;
+}
+
+.timer-btn {
+  height: 50px;
+  width: 150px;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: blue;
+}
+
+.value {
+  color: mediumblue;
+  font-weight: 600;
+  font-size: 55px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
